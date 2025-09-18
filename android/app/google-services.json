@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "853685891594",
+    "project_id": "fazenda-santa-fe-c0afa",
+    "storage_bucket": "fazenda-santa-fe-c0afa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853685891594:android:dc15d4508ea0d1030565f3",
+        "android_client_info": {
+          "package_name": "com.fazenda.santafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUXccv_Psh0-Lsn2E97dbR49Sy8bfuY2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
