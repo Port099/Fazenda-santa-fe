@@ -7,40 +7,11 @@ class AuthService {
 
   // Lista dos usuários autorizados da fazenda
   static const List<Map<String, String>> usuariosAutorizados = [
-    {'email': 'joao@fazenda.com', 'nome': 'João Silva', 'funcao': 'Supervisor'},
     {
-      'email': 'maria@fazenda.com',
-      'nome': 'Maria Santos',
-      'funcao': 'Veterinária'
+      'email': 'ericklindo123lindo@gmail.com',
+      'nome': 'Erick Porto',
+      'funcao': 'Proprietário'
     },
-    {
-      'email': 'carlos@fazenda.com',
-      'nome': 'Carlos Oliveira',
-      'funcao': 'Tratador'
-    },
-    {
-      'email': 'ana@fazenda.com',
-      'nome': 'Ana Costa',
-      'funcao': 'Administradora'
-    },
-    {'email': 'pedro@fazenda.com', 'nome': 'Pedro Souza', 'funcao': 'Operador'},
-    {
-      'email': 'lucia@fazenda.com',
-      'nome': 'Lúcia Lima',
-      'funcao': 'Nutricionista'
-    },
-    {
-      'email': 'paulo@fazenda.com',
-      'nome': 'Paulo Ferreira',
-      'funcao': 'Mecânico'
-    },
-    {'email': 'rita@fazenda.com', 'nome': 'Rita Alves', 'funcao': 'Contadora'},
-    {
-      'email': 'jorge@fazenda.com',
-      'nome': 'Jorge Mendes',
-      'funcao': 'Segurança'
-    },
-    {'email': 'admin@fazenda.com', 'nome': 'Administrador', 'funcao': 'Admin'},
   ];
 
   // Obter usuário atual

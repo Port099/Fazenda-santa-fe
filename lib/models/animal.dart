@@ -87,9 +87,9 @@ class Animal {
     List<RegistroCio>? registrosCio, // Nova propriedade no construtor
     DateTime? dataCadastro,
     this.dataUltimaTransferencia,
-  }) : vacinas = vacinas ?? [],
-       registrosCio = registrosCio ?? [],
-       dataCadastro = dataCadastro ?? DateTime.now();
+  })  : vacinas = vacinas ?? [],
+        registrosCio = registrosCio ?? [],
+        dataCadastro = dataCadastro ?? DateTime.now();
 
   // Getters úteis
   String get tipoString {
@@ -272,9 +272,8 @@ class Animal {
       'loteAtual': loteAtual,
       'observacao': observacao,
       'vacinas': vacinas.map((v) => v.toMap()).toList(),
-      'registrosCio': registrosCio
-          .map((r) => r.toMap())
-          .toList(), // Nova serialização
+      'registrosCio':
+          registrosCio.map((r) => r.toMap()).toList(), // Nova serialização
       'dataCadastro': dataCadastro.toIso8601String(),
       'dataUltimaTransferencia': dataUltimaTransferencia?.toIso8601String(),
     };
@@ -288,16 +287,15 @@ class Animal {
       meses: map['meses'],
       loteAtual: map['loteAtual'],
       observacao: map['observacao'] ?? '',
-      vacinas:
-          (map['vacinas'] as List<dynamic>?)
+      vacinas: (map['vacinas'] as List<dynamic>?)
               ?.map((v) => Vacina.fromMap(v))
               .toList() ??
           [],
       registrosCio: // Nova deserialização
           (map['registrosCio'] as List<dynamic>?)
-              ?.map((r) => RegistroCio.fromMap(r))
-              .toList() ??
-          [],
+                  ?.map((r) => RegistroCio.fromMap(r))
+                  .toList() ??
+              [],
       dataCadastro: DateTime.parse(map['dataCadastro']),
       dataUltimaTransferencia: map['dataUltimaTransferencia'] != null
           ? DateTime.parse(map['dataUltimaTransferencia'])
